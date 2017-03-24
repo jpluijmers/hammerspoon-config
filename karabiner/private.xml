@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<root>
+	<vkopenurldef>
+	  <name>KeyCode::VK_OPEN_URL_HS_toSpace1</name>
+	  <url>hammerspoon://toSpace?targetSpace=1</url>
+	</vkopenurldef>
+	<vkopenurldef>
+	  <name>KeyCode::VK_OPEN_URL_HS_toSpace2</name>
+	  <url>hammerspoon://toSpace?targetSpace=2</url>
+	</vkopenurldef>
+	<vkopenurldef>
+	  <name>KeyCode::VK_OPEN_URL_HS_toSpace3</name>
+	  <url>hammerspoon://toSpace?targetSpace=3</url>
+	</vkopenurldef>
+	<vkopenurldef>
+	  <name>KeyCode::VK_OPEN_URL_HS_toSpace4</name>
+	  <url>hammerspoon://toSpace?targetSpace=4</url>
+	</vkopenurldef>
+
+
+	<vkopenurldef>
+	  <name>KeyCode::VK_OPEN_URL_HS_windowToSpace1</name>
+	  <url>hammerspoon://windowToSpace?targetSpace=1</url>
+	</vkopenurldef>
+	<vkopenurldef>
+	  <name>KeyCode::VK_OPEN_URL_HS_windowToSpace2</name>
+	  <url>hammerspoon://windowToSpace?targetSpace=2</url>
+	</vkopenurldef>
+	<vkopenurldef>
+	  <name>KeyCode::VK_OPEN_URL_HS_windowToSpace3</name>
+	  <url>hammerspoon://windowToSpace?targetSpace=3</url>
+	</vkopenurldef>
+	<vkopenurldef>
+	  <name>KeyCode::VK_OPEN_URL_HS_windowToSpace4</name>
+	  <url>hammerspoon://windowToSpace?targetSpace=4</url>
+	</vkopenurldef>
+
+
+
+
+	<item>
+	    <name>Remap Brightness down + ctrl to windowSpace1 if command is pressed</name>
+	    <identifier>usercustom.hammerspoon_cmd_ctrl_brightness_down</identifier>
+	    <autogen>
+	        __KeyToKey__
+	        ConsumerKeyCode::BRIGHTNESS_DOWN, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L,
+	        KeyCode::VK_OPEN_URL_HS_windowToSpace1
+	    </autogen>
+	</item>
+	<item>
+	    <name>Remap Brightness up + ctrl to windowSpace2 if command is pressed</name>
+	    <identifier>usercustom.hammerspoon_cmd_ctrl_brightness_up</identifier>
+	    <autogen>
+	        __KeyToKey__
+	        ConsumerKeyCode::BRIGHTNESS_UP, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L,
+	        KeyCode::VK_OPEN_URL_HS_windowToSpace2
+	    </autogen>
+	</item>
+	<item>
+	    <name>Remap mission control + ctrl up to windowSpace3 if command is pressed</name>
+	    <identifier>usercustom.hammerspoon_cmd__ctrlmission_control</identifier>
+	    <autogen>
+	        __KeyToKey__
+	        KeyCode::MISSION_CONTROL, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L,
+	        KeyCode::VK_OPEN_URL_HS_windowToSpace3
+	    </autogen>
+	</item>
+	<item>
+	    <name>Remap dashboard + ctrl to windowSpace4 if command is pressed</name>
+	    <identifier>usercustom.hammerspoon_cmd__ctrldashboard</identifier>
+	    <autogen>
+	        __KeyToKey__
+	        KeyCode::LAUNCHPAD, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L,
+	        KeyCode::VK_OPEN_URL_HS_windowToSpace4
+	    </autogen>
+	</item>
+
+
+		<item>
+	    <name>Remap Brightness down to toSpace1 if command is pressed</name>
+	    <identifier>usercustom.hammerspoon_cmd_brightness_down</identifier>
+	    <autogen>
+	        __KeyToKey__
+	        ConsumerKeyCode::BRIGHTNESS_DOWN, ModifierFlag::COMMAND_L,
+	        KeyCode::VK_OPEN_URL_HS_toSpace1
+	    </autogen>
+	</item>
+	<item>
+	    <name>Remap Brightness up to toSpace2 if command is pressed</name>
+	    <identifier>usercustom.hammerspoon_cmd_brightness_up</identifier>
+	    <autogen>
+	        __KeyToKey__
+	        ConsumerKeyCode::BRIGHTNESS_UP, ModifierFlag::COMMAND_L,
+	        KeyCode::VK_OPEN_URL_HS_toSpace2
+	    </autogen>
+	</item>
+	<item>
+	    <name>Remap mission control up to toSpace3 if command is pressed</name>
+	    <identifier>usercustom.hammerspoon_cmd_mission_control</identifier>
+	    <autogen>
+	        __KeyToKey__
+	        KeyCode::MISSION_CONTROL, ModifierFlag::COMMAND_L,
+	        KeyCode::VK_OPEN_URL_HS_toSpace3
+	    </autogen>
+	</item>
+	<item>
+	    <name>Remap dashboard to toSpace4 if command is pressed</name>
+	    <identifier>usercustom.hammerspoon_cmd_dashboard</identifier>
+	    <autogen>
+	        __KeyToKey__
+	        KeyCode::LAUNCHPAD, ModifierFlag::COMMAND_L,
+	        KeyCode::VK_OPEN_URL_HS_toSpace4
+	    </autogen>
+	</item>
+</root>
